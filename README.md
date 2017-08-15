@@ -3,7 +3,7 @@
 ## プロジェクトの作り方
 1. gitから落とす
 ```
-git clone https://github.com/rio1228/electron-react-redux-webpack.git
+git clone https://github.com/rio1228/react-express-mysql-express.git
 ```
 2. package.jsonをinstall
 ```
