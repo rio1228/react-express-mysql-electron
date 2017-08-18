@@ -28,7 +28,6 @@ npm run-script start
 package.jsonのnameとcomponentの部分を自分のプロジェクトに合わせる
 ```package.json
 "name": "electron-template"
-"component": "asar pack ./out ./clipfmt.asar",
 "package": "electron-packager ./ clipfmt --platform=darwin,win32 --arch=x64"
 ```
 package.jsonを何かしら変更した場合は
@@ -43,10 +42,6 @@ yarn build
 ```
 npm run-script build
 ```
-プロジェクトを.asarファイルにまとめる
-```
-yarn component
-```
 プロジェクトをパッケージ化
 ```
 yarn package
@@ -58,7 +53,6 @@ start…electronをパッケージ化せずに起動。
 ただし、ディレクトリ構造的にbuildをしてからでないとエラーが出る。もしくは変更が反映されない
 build…webpackでソースをまとめる
 build-w…webpackするファイルの変更を監視
-component…webpackでまとめたフォルダをasarファイルにまとめる
 package-○○…プロジェクトのパッケージ化
 repackage-○○…プロジェクトのパッケージ化(上書きする時に使う。一度パッケージ化した後は上書きにしないとエラーになる)
 all-package-○○…上記のbuild,component,packageをまとめたもの。
