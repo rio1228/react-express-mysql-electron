@@ -54,14 +54,17 @@ yarn package
 
 ## package.jsonのscriptsの説明
 ```
-start…electronをパッケージ化せずに起動。ただし、ディレクトリ構造的にbuildをしてからでないとエラーが出る。もしくは変更が反映されない
+start…electronをパッケージ化せずに起動。
+ただし、ディレクトリ構造的にbuildをしてからでないとエラーが出る。もしくは変更が反映されない
 build…webpackでソースをまとめる
 build-w…webpackするファイルの変更を監視
 component…webpackでまとめたフォルダをasarファイルにまとめる
-package…プロジェクトのパッケージ化
-repackage…プロジェクトのパッケージ化(上書きする時に使う。一度パッケージ化した後は上書きにしないとエラーになる)
-all-package…上記のbuild,component,packageをまとめたもの。
-all-repackage…上記のbuildmcomponent,repackageをまとめたもの
+package-○○…プロジェクトのパッケージ化
+repackage-○○…プロジェクトのパッケージ化(上書きする時に使う。一度パッケージ化した後は上書きにしないとエラーになる)
+all-package-○○…上記のbuild,component,packageをまとめたもの。
+all-repackage-○○…上記のbuildmcomponent,repackageをまとめたもの
+※-○○に入るwin,mac,win-macはそれぞれ、windows用,mac用、windows/mac用のコマンド
+windows用のパッケージが作りたければ、winを選択し、どちらも作りたければwin-macを選択する
 ```
 
 ## 注意点
